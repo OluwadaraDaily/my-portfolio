@@ -13,9 +13,30 @@ header {
       font-weight: var(--text-bold);
     }
   }
-  .portfolio__header__links {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  .portfolio__header__links-and-image {
+    .portfolio__header__links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .portfolio__header__image {
+      &-img {
+        object-fit: none;
+        object-position: center bottom;
+      }
+    }
   }
+}
+
+@media (min-width: 481px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
 }

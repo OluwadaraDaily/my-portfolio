@@ -9,6 +9,7 @@
   --black: #151515;
   --black-soft: #242424;
   --black-mute: #282828;
+  --black-fade: rgba(151,151,151, .2);
 
   --indigo: #2c3e50;
 
@@ -91,4 +92,18 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  body {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  body {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
