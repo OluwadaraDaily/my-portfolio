@@ -1,0 +1,11 @@
+@import './base.css';
+
+@media (hover: hover) {
+  a:hover,
+  button:hover {
+    color: var(--text-hover);
+  }
+}
+
+@media (min-width: 1024px) {
+}

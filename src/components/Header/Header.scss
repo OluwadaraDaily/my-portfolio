@@ -1,0 +1,15 @@
+@import '../../assets/base.css';
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .portfolio__header__name {
+    &__title {
+      font-size: var(--text-m);
+      color: var(--text-light-1);
+      font-weight: var(--text-bold);
+    }
+  }
+}
