@@ -5,11 +5,17 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 10px;
   .portfolio__header__name {
     &__title {
       font-size: var(--text-m);
       color: var(--text-light-1);
       font-weight: var(--text-bold);
     }
+  }
+  .portfolio__header__links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
   }
 }
