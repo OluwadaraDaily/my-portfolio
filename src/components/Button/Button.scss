@@ -1,0 +1,18 @@
+@import '../../assets/base.scss';
+
+.btn {
+  padding: 10px 0;
+  background: none;
+  color: var(--white);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Space Grotesk';
+  border: none;
+  border-bottom: 2px solid var(--green);
+  cursor: pointer;
+}
+
+.btn:hover {
+  text-decoration: none;
+}

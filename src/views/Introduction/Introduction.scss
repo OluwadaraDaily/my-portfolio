@@ -1,0 +1,71 @@
+@import '../../assets/base.scss';
+
+.main-introduction {
+  .header {
+    line-height: 1;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 25px;
+    .name {
+      padding-bottom: 10px;
+      font-weight: 700;
+      border-bottom: 3px solid var(--green);
+      padding-bottom: 0;
+    }
+  }
+  .bio {
+    color: var(--white-soft);
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  .contact-me {
+    text-align: center;
+  }
+}
+
+// Applies to both tablet and desktop
+@media (min-width: 660px) {
+  .main-introduction {
+    .header {
+      text-align: left;
+    }
+    .bio {
+      text-align: left;
+    }
+    .contact-me {
+      text-align: left;
+    }
+  }
+}
+
+// Tablet View
+@media (min-width: 660px) and (max-width: 1024px) {
+  .main-introduction {
+    max-width: 70%;
+    margin-left: 5%;
+    margin-top: 45px;
+    .header {
+      font-size: 47px;
+      line-height: 1.1;
+    }
+    .bio {
+      width:70%;
+    }
+  }
+}
+
+// Desktop view
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .main-introduction {
+    max-width: 70%;
+    margin-top: 45px;
+    .header {
+      font-size: 70px;
+    }
+    .bio {
+      width:70%;
+      font-size: 18px;
+    }
+  }
+}
