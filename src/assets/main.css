@@ -1,9 +1,10 @@
-@import './base.css';
+@import './base.scss';
 
 @media (hover: hover) {
   a:hover,
   button:hover {
     color: var(--text-hover);
+    text-decoration: none;
   }
 }
 

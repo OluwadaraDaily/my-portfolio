@@ -32,6 +32,10 @@
   --text-l: 48px;
   --text-m: 24px;
   --text-s: 18px;
+  --text-xs: 14px;
+  
+  --text-xl-mb: 40px;
+
 
   --text-light: 300;
   --text-regular: 400;
@@ -68,7 +72,7 @@
     --color-border-hover: var(--divider-dark-1);
 
     --color-heading: var(--text-dark-1);
-    --color-text: var(--text-dark-2);
+    --color-text: var(--text-light-1);
   }
 }
 
@@ -102,6 +106,27 @@ a {
   cursor: pointer;
 }
 
+p {
+  color: var(--color-text);
+
+  &.xl {
+    font-size: var(--text-xl);
+  }
+
+  &.lg {
+    font-size: var(--text-l);
+  }
+  &.md {
+    font-size: var(--text-m);
+  }
+  &.sm {
+    font-size: var(--text-s);
+  }
+  &.xs {
+    font-size: var(--text-xs);
+  }
+}
+
 @media (hover: hover) {
   a:hover,
   button:hover {
@@ -111,12 +136,18 @@ a {
   }
 }
 
-@media (min-width: 481px) and (max-width: 1024px) {
+/* Mobile View */
+@media (max-width: 659px) {
   body {
+    width: 90%;
     margin: 0 auto;
   }
 }
 
+/* Tablet view */
+@media (min-width: 660px) and (max-width: 1024px) {}
+
+/* Desktop View */
 @media (min-width: 1025px) and (max-width: 1440px) {
   body {
     max-width: 80%;
