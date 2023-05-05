@@ -4,12 +4,14 @@ import Header from './components/Header/Header.vue';
 </script>
 
 <template>
-  <div>
+  <div class="app">
     <Header/>
     Blank Slate
   </div>
 </template>
 
 <style scoped>
-
+.app {
+  
+}
 </style>

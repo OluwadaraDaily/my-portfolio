@@ -9,6 +9,7 @@
   --black: #151515;
   --black-soft: #242424;
   --black-mute: #282828;
+  --black-fade: rgba(151,151,151, .2);
 
   --indigo: #2c3e50;
 
@@ -81,6 +82,7 @@
 }
 
 body {
+  position: relative;
   min-height: 100vh;
   color: var(--color-text);
   background: var(--color-background);
@@ -91,4 +93,33 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  -webkit-text-decoration-color: rgba(255, 0, 0, 0); /* Safari */   
+  text-decoration-color: rgba(255, 0, 0, 0);
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  a:hover,
+  button:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--text-hover);
+    color: var(--text-hover);
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  body {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  body {
+    max-width: 80%;
+    margin: 0 auto;
+  }
 }
