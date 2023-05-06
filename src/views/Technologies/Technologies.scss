@@ -1,0 +1,37 @@
+@import '../../assets/base.scss';
+
+.main-technologies {
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  border-top: 1px solid var(--white);
+  border-bottom: 1px solid var(--white);
+  margin: 50px 0;
+  gap: 30px;
+  justify-content: center;
+  align-content: center;
+}
+
+// Applies to both tablet and desktop
+@media (min-width: 660px) {
+  .main-technologies {
+    border-bottom: none;
+  }
+}
+
+// Tablet View
+@media (min-width: 660px) and (max-width: 1024px) {
+  .main-technologies {
+    width: 90%;
+    margin: 50px auto;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Desktop view
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .main-technologies {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 100px 0;
+  }
+}
