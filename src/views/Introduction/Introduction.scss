@@ -1,6 +1,7 @@
 @import '../../assets/base.scss';
 
 .main-introduction {
+  padding: 0 5%;
   .header {
     line-height: 1;
     font-weight: 600;
@@ -48,6 +49,7 @@
     max-width: 70%;
     margin-left: 5%;
     margin-top: 45px;
+    padding: 0;
     .header {
       font-size: 47px;
       line-height: 1.1;
