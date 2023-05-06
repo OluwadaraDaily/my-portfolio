@@ -6,7 +6,7 @@
   grid-template-columns: 1fr;
   border-top: 1px solid var(--white);
   border-bottom: 1px solid var(--white);
-  margin: 50px 0;
+  margin: 50px 5%;
   gap: 30px;
   justify-content: center;
   align-content: center;
@@ -31,7 +31,7 @@
 // Desktop view
 @media (min-width: 1025px) and (max-width: 1440px) {
   .main-technologies {
+    margin: 100px 5%;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 100px 0;
   }
 }

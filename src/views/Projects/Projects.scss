@@ -1,7 +1,8 @@
 @import '../../assets/base.scss';
 
 .main-projects {
-
+  width: 90%;
+  margin: 0 auto;
   &__projects {
     display: grid;
     grid-template-columns: 1fr;
@@ -41,7 +42,7 @@
 // Desktop view
 @media (min-width: 1025px) and (max-width: 1440px) {
   .main-projects {
-    margin: 100px 0;
+    margin: 100px 5%;
     &__projects {
       gap: 35px;
     }

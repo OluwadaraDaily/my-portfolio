@@ -1,0 +1,60 @@
+@import '../../assets/base.scss';
+
+.main-contact {
+  background-color: var(--black-soft);
+  padding: 35px 5%;
+
+  .title {
+    font-size: var(--text-ml);
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .sub-title {
+    text-align: center;
+  }
+
+  .form {
+    margin: 20px 0;
+
+    .form-btn {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+// Tablet View
+@media (min-width: 660px) and (max-width: 1024px) {
+  .main-contact {
+    .sub-title, .form {
+      max-width: 70%;
+      margin: 0 auto;
+    }
+  }
+}
+
+// Desktop view
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .main-contact {
+    display: flex;
+    align-items: center;
+
+    .contact-text {
+      flex: 1;
+      .title, .sub-title {
+        text-align: left;
+      }
+      .title {
+        font-size: var(--text-xl);
+      }
+      .sub-title {
+        max-width: 445px;
+        font-size: var(--text-s);
+      }
+    }
+    .form {
+      flex: 1;
+    }
+  }
+}

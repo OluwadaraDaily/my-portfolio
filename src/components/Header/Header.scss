@@ -84,6 +84,7 @@ header {
 // Desktop view
 @media (min-width: 1025px) and (max-width: 1440px) {
   header {
+    margin: 0 5%;
     .main-header {
       .portfolio__header__links {
         gap: 30px;
