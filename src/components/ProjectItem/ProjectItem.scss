@@ -1,0 +1,30 @@
+@import '../../assets/base.scss';
+
+.main-project-item {
+  margin-bottom: 35px;
+  .project-img {
+    width: 100%;
+  }
+  .title {
+    font-size: var(--text-s);
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  ul.tech-stack-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    li {
+      color: var(--white-soft);
+      font-weight: 500;
+    }
+  }
+  .project-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+  }
+}

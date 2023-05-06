@@ -1,0 +1,49 @@
+@import '../../assets/base.scss';
+
+.main-projects {
+
+  &__projects {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .top-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    .title {
+      font-size: var(--text-ml);
+      font-weight: 700;
+    }
+  }
+}
+
+// Applies to both tablet and desktop
+@media (min-width: 660px) {
+  .main-projects {
+    &__projects {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+// Tablet View
+@media (min-width: 660px) and (max-width: 1024px) {
+  .main-projects {
+    width: 90%;
+    margin: 50px auto;
+    &__projects {
+      gap: 25px;
+    }
+  }
+}
+
+// Desktop view
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .main-projects {
+    margin: 100px 0;
+    &__projects {
+      gap: 35px;
+    }
+  }
+}
