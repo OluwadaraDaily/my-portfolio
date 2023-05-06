@@ -1,0 +1,34 @@
+@import '../../assets/base.scss';
+
+.main-footer {
+  background-color: var(--black-soft);
+  .inner-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+    border-top: 1px solid var(--white);
+    padding: 25px 0;
+    .footer-name {
+      font-size: var(--text-m);
+      font-weight: 700;
+    }
+    .footer-links {
+      display: flex;
+      gap: 25px;
+    }
+
+  }
+}
+
+// Applies to both tablet and desktop
+@media (min-width: 660px) {
+  .main-footer {
+    .inner-footer {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
