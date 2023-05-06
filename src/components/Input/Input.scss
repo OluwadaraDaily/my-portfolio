@@ -1,0 +1,22 @@
+.input {
+  width: 100%;
+  padding: 10px 0 10px 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--white);
+  margin: 15px 0;
+  outline: none;
+  caret-color: var(--white);
+  color: var(--white);
+  font-family: 'Space Grotesk';
+  &::placeholder {
+    color: var(--white);
+    font-family: 'Space Grotesk';
+    text-transform: uppercase;
+    opacity: .5;
+  }
+  &::selection {
+    background-color: var(--white);
+    color: var(--black)
+  }
+}

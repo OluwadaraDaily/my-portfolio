@@ -9,16 +9,16 @@
     projectRepo: String
   });
 
-  const openProject = () => {
-    if (!!props.projectLink) {
-      window.open(props.projectLink, "_blank")
-    }
+const openProject = () => {
+  if (!!props.projectLink) {
+    window.open(props.projectLink, "_blank")
   }
-  const openRepo = () => {
-    if (!!props.projectRepo) {
-      window.open(props.projectRepo, "_blank")
-    }
+};
+const openRepo = () => {
+  if (!!props.projectRepo) {
+    window.open(props.projectRepo, "_blank")
   }
+};
 </script>
 
 <template>
