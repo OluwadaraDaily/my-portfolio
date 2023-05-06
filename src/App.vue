@@ -5,6 +5,7 @@ import Introduction from './views/Introduction/Introduction.vue';
 import Technologies from './views/Technologies/Technologies.vue';
 import Projects from './views/Projects/Projects.vue';
 import Contact from './views/Contact/Contact.vue';
+import Footer from './views/Footer/Footer.vue';
 </script>
 
 <template>
@@ -14,6 +15,7 @@ import Contact from './views/Contact/Contact.vue';
     <Technologies/>
     <Projects/>
     <Contact/>
+    <Footer/>
   </div>
 </template>
 

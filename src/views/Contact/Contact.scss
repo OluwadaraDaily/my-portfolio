@@ -2,8 +2,7 @@
 
 .main-contact {
   background-color: var(--black-soft);
-  padding: 35px 5%;
-
+  padding: 35px 5% 80px 5%;
   .title {
     font-size: var(--text-ml);
     font-weight: 700;
@@ -35,7 +34,7 @@
 }
 
 // Desktop view
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1025px) {
   .main-contact {
     display: flex;
     align-items: center;
