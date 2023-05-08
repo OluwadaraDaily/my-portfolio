@@ -24,9 +24,7 @@ export default {
   methods: {
     scrollTo(refName) {
       const element = this.$refs[refName]
-      console.log('Element ->', element)
       const top = element.$el.offsetTop
-      console.log('Top ->', top)
       window.scrollTo(0, top)
     }
   }
