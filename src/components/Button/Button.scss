@@ -11,7 +11,13 @@
   border: none;
   border-bottom: 2px solid var(--green);
   cursor: pointer;
+
+  &:disabled {
+    opacity: .5;
+  }
 }
+
+
 
 .btn:hover {
   text-decoration: none;
