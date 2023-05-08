@@ -11,13 +11,27 @@ import Footer from './views/Footer/Footer.vue';
 <template>
   <div class="app">
     <Header/>
-    <Introduction/>
+    <Introduction :scrollTo="scrollTo"/>
     <Technologies/>
-    <Projects/>
-    <Contact/>
+    <Projects :scrollTo="scrollTo"/>
+    <Contact ref="contact-section"/>
     <Footer/>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    scrollTo(refName) {
+      const element = this.$refs[refName]
+      console.log('Element ->', element)
+      const top = element.$el.offsetTop
+      console.log('Top ->', top)
+      window.scrollTo(0, top)
+    }
+  }
+}
+</script>
 
 <style scoped>
 </style>

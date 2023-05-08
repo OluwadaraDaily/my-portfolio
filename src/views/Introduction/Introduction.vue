@@ -1,5 +1,12 @@
 <script setup>
-  import AppButton from "../../components/Button/Button.vue";
+import AppButton from "../../components/Button/Button.vue";
+
+defineProps({
+  scrollTo: {
+    type: Function,
+    required: true
+  }
+});
 </script>
 
 <template>
@@ -10,12 +17,12 @@
       real problems.
     </p>
     <div class="contact-me">
-      <AppButton button-text="Contact Me"/>
+      <AppButton button-text="Contact Me" @click="scrollTo('contact-section')"/>
     </div>
   </div>
 </template>
 
 
 <style lang="scss" scoped>
-@import './Introduction.scss'
+@import './Introduction.scss';
 </style>
