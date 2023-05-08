@@ -86,6 +86,10 @@
   font-weight: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   position: relative;
   min-height: 100vh;
@@ -134,6 +138,10 @@ p {
     text-decoration: underline;
     text-decoration-color: var(--text-hover);
     color: var(--text-hover);
+    
+  }
+  svg:hover path {
+    fill: var(--text-hover);
   }
 }
 
