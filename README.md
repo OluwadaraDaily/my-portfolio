@@ -26,7 +26,7 @@ This is a single page portfolio website that shows four of the top projects I ha
 ### Links
 
 - Solution URL: [Github Repository](https://github.com/OluwadaraDaily/my-portfolio)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live Site](https://oluwadara-oloye.netlify.app/)
 
 ## My process
 
@@ -58,6 +58,6 @@ I learned the following:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [Oluwadara Oloye](https://oluwadara-oloye.netlify.app/)
 - Frontend Mentor - [@OluwadaraDaily](https://www.frontendmentor.io/profile/OluwadaraDaily)
 - Twitter - [@OluwadaraDaily](https://www.twitter.com/OluwadaraDaily)
