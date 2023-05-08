@@ -1,35 +1,63 @@
-# oluwadara-portfolio
+# My Portfolio Website
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a solution to the [Single-page developer portfolio](https://www.frontendmentor.io/challenges/singlepage-developer-portfolio-bBVj2ZPi-x/hub). I seized the opportunity to create my own portfolio website.
 
-## Recommended IDE Setup
+## Table of contents
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-## Customize configuration
+## Overview
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+This is a single page portfolio website that shows four of the top projects I have worked on till date, relevant links and details as well as a contact form where you can get in touch with me.
 
-## Project Setup
+### Screenshot
 
-```sh
-npm install
-```
+![Desktop Screenshot](./src/assets/images/desktop.png)
+![Tablet Screenshot](./src/assets/images/tablet.png)
+![Mobile Screenshot](./src/assets/images/phone.png)
 
-### Compile and Hot-Reload for Development
+### Links
 
-```sh
-npm run dev
-```
+- Solution URL: [Github Repository](https://github.com/OluwadaraDaily/my-portfolio)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-### Compile and Minify for Production
+## My process
 
-```sh
-npm run build
-```
+I started work with the mobile section first. I divided up the page into sections and I built them in different `views`. As such, the logic, responsiveness and data for each section is separated from every one.
+This is the first time I am trying this and seems to work well for a single page app.
 
-### Lint with [ESLint](https://eslint.org/)
+### Built with
 
-```sh
-npm run lint
-```
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [Vue3](https://vuejs.org/) - JS library
+- [Vuelidate](https://vuelidate-next.netlify.app/) - A Vue Form Handler
+- [Airtable API](https://airtable.com/developers/web) - Save form data submissions
+
+### What I learned
+
+I learned the following:
+
+- Vuelidate. I learned how to use this library for this project.
+- Vue3. I have used Vue2 for most of my life.
+
+### Useful resources
+
+- [Vuelidate](https://learnvue.co/articles/intro-to-vuelidate#using-vuelidate-with-the-composition-api) - This helped me to learn Vuelidate quickly.
+- [Posting HTML form data to Airtable via REST API](https://blog.devgenius.io/html-form-to-airtable-via-api-fc2f6f743cef) - This helped me learn integrating with Airtable.
+
+## Author
+
+- Website - [Add your name here](https://www.your-site.com)
+- Frontend Mentor - [@OluwadaraDaily](https://www.frontendmentor.io/profile/OluwadaraDaily)
+- Twitter - [@OluwadaraDaily](https://www.twitter.com/OluwadaraDaily)
