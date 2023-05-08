@@ -15,6 +15,58 @@
 
   .form {
     margin: 20px 0;
+    .input-div {
+      margin: 15px 0;
+
+      .input-right-icon {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .input {
+        // position: relative;
+        width: 100%;
+        padding: 10px 0 10px 10px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid var(--white);
+        outline: none;
+        caret-color: var(--white);
+        color: var(--white);
+        font-family: 'Space Grotesk';
+        text-transform: uppercase;
+        line-height: 1.5;
+        &::placeholder {
+          color: var(--white);
+          font-family: 'Space Grotesk';
+          text-transform: uppercase;
+          opacity: .5;
+        }
+        &::selection {
+          background-color: var(--white);
+          color: var(--black)
+        }
+      }
+
+      .error-input {
+        border-bottom: 1px solid var(--error);
+      }
+
+      .success-input {
+        border-bottom: 1px solid var(--green);
+      }
+
+      .error-span {
+        text-align: right;
+        margin-top: 5px;
+        .error-message {
+          color: var(--error);
+          font-weight: 500;
+        }
+      }
+  
+    }
 
     .form-btn {
       display: flex;
