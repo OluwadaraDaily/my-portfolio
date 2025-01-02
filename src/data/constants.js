@@ -1,23 +1,23 @@
 export const technologies = [
   {
     name: 'HTML',
-    yearsOfExperience: '4'
+    yearsOfExperience: '5'
   },
   {
     name: 'CSS',
-    yearsOfExperience: '4'
+    yearsOfExperience: '5'
   },
   {
     name: 'Vue',
-    yearsOfExperience: '4'
+    yearsOfExperience: '5'
   },
   {
     name: 'React',
-    yearsOfExperience: '2'
+    yearsOfExperience: '3'
   },
   {
-    name: 'Adonis',
-    yearsOfExperience: '4'
+    name: 'NodeJS',
+    yearsOfExperience: '5'
   },
   {
     name: 'GraphQL',
@@ -42,6 +42,13 @@ export const technologies = [
 ]
 
 export const projects = [
+  {
+    name: 'Project 1209',
+    projectLink: 'https://project-1209.netlify.app/',
+    projectRepo: 'https://github.com/OluwadaraDaily/project-1209',
+    image: 'project-1209.png',
+    techStack: ['Lit', 'HTML', 'Python', 'Crypto']
+  },
   {
     name: 'Interactive Credit Card',
     projectLink: 'https://carrds.netlify.app',
