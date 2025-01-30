@@ -65,6 +65,13 @@ export const projects = [
     techStack: ['Lit', 'HTML', 'Python', 'Crypto']
   },
   {
+    name: 'Dead Jokes',
+    projectLink: 'https://deadjokes.netlify.app/',
+    projectRepo: 'https://github.com/OluwadaraDaily/nuxt-dadjokes',
+    image: 'dead-jokes.png',
+    techStack: ['Nuxt2', 'API Integration', 'PostHog Analytics', 'Node Mail', 'Node JS']
+  },
+  {
     name: 'Interactive Credit Card',
     projectLink: 'https://carrds.netlify.app',
     projectRepo: 'https://github.com/OluwadaraDaily/interactive-card',
