@@ -8,11 +8,19 @@ export const technologies = [
     yearsOfExperience: '5'
   },
   {
+    name: 'Javascript',
+    yearsOfExperience: '5'
+  },
+  {
     name: 'Vue',
     yearsOfExperience: '5'
   },
   {
     name: 'React',
+    yearsOfExperience: '3'
+  },
+  {
+    name: 'NextJS',
     yearsOfExperience: '3'
   },
   {
