@@ -43,6 +43,13 @@ export const technologies = [
 
 export const projects = [
   {
+    name: 'Audiophile',
+    projectLink: 'https://audiophiled.netlify.app/',
+    projectRepo: 'https://github.com/OluwadaraDaily/audiophile-ui',
+    image: 'audiophile.png',
+    techStack: ['Vue', 'Pinia', 'Composition API', 'Node', 'Knex', 'Express']
+  },
+  {
     name: 'Project 1209',
     projectLink: 'https://project-1209.netlify.app/',
     projectRepo: 'https://github.com/OluwadaraDaily/project-1209',
