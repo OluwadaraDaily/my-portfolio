@@ -1,13 +1,5 @@
 export const technologies = [
   {
-    name: 'HTML',
-    yearsOfExperience: '5'
-  },
-  {
-    name: 'CSS',
-    yearsOfExperience: '5'
-  },
-  {
     name: 'Javascript',
     yearsOfExperience: '5'
   },
@@ -32,11 +24,7 @@ export const technologies = [
     yearsOfExperience: '2'
   },
   {
-    name: 'Django',
-    yearsOfExperience: '2'
-  },
-  {
-    name: 'Flask',
+    name: 'FastAPI',
     yearsOfExperience: '2'
   },
   {
@@ -56,6 +44,13 @@ export const projects = [
     projectRepo: 'https://github.com/OluwadaraDaily/audiophile-ui',
     image: 'audiophile.png',
     techStack: ['Vue', 'Pinia', 'Composition API', 'Node', 'Knex', 'Express']
+  },
+  {
+    name: 'My Finance App',
+    projectLink: 'https://my-finance-ui.vercel.app/dashboard',
+    projectRepo: 'https://github.com/OluwadaraDaily/my-finance-ui',
+    image: 'my-finance-app.png',
+    techStack: ['FastAPI', 'React', 'NextJS', 'TailwindCSS']
   },
   {
     name: 'Project 1209',
@@ -85,18 +80,18 @@ export const projects = [
     image: 'multi-step-form.png',
     techStack: ['React', 'SASS', 'Formik', 'Yup', 'Redux', 'MUI']
   },
-  {
-    name: 'User Dashboard',
-    projectLink: 'https://oluwadara-lendsqr-fe-test.netlify.app/',
-    projectRepo: 'https://github.com/OluwadaraDaily/lendsqr-fe-test',
-    image: 'user-dashboard-lendsqr.png',
-    techStack: ['HTML', 'CSS', 'React', 'SASS', 'React Tables']
-  },
-  {
-    name: 'Opus Landing Page',
-    projectLink: 'https://opus-landing.netlify.app',
-    projectRepo: 'https://github.com/OluwadaraDaily/opus-landing-page',
-    image: 'opus-landing-page.png',
-    techStack: ['HTML', 'CSS', 'React', 'SASS']
-  }
+  // {
+  //   name: 'User Dashboard',
+  //   projectLink: 'https://oluwadara-lendsqr-fe-test.netlify.app/',
+  //   projectRepo: 'https://github.com/OluwadaraDaily/lendsqr-fe-test',
+  //   image: 'user-dashboard-lendsqr.png',
+  //   techStack: ['HTML', 'CSS', 'React', 'SASS', 'React Tables']
+  // },
+  // {
+  //   name: 'Opus Landing Page',
+  //   projectLink: 'https://opus-landing.netlify.app',
+  //   projectRepo: 'https://github.com/OluwadaraDaily/opus-landing-page',
+  //   image: 'opus-landing-page.png',
+  //   techStack: ['HTML', 'CSS', 'React', 'SASS']
+  // }
 ]
