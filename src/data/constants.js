@@ -53,6 +53,13 @@ export const projects = [
     techStack: ['FastAPI', 'React', 'NextJS', 'TailwindCSS']
   },
   {
+    name: 'Tech Product Tracker (Web Scraping)',
+    projectLink: 'https://github.com/OluwadaraDaily/tech-product-tracker',
+    projectRepo: 'https://github.com/OluwadaraDaily/tech-product-tracker',
+    image: 'tech-product-tracker.png',
+    techStack: ['Python', 'BeautifulSoup', 'Playwright', 'SQLite']
+  },
+  {
     name: 'Project 1209',
     projectLink: 'https://project-1209.netlify.app/',
     projectRepo: 'https://github.com/OluwadaraDaily/project-1209',
@@ -66,20 +73,20 @@ export const projects = [
     image: 'dead-jokes.png',
     techStack: ['Nuxt2', 'API Integration', 'PostHog Analytics', 'Node Mail', 'Node JS']
   },
-  {
-    name: 'Interactive Credit Card',
-    projectLink: 'https://carrds.netlify.app',
-    projectRepo: 'https://github.com/OluwadaraDaily/interactive-card',
-    image: 'interactive-credit-card.png',
-    techStack: ['HTML', 'CSS', 'React', 'SASS']
-  },
-  {
-    name: 'Multi Step Form',
-    projectLink: 'https://staged-forms.netlify.app',
-    projectRepo: 'https://github.com/OluwadaraDaily/multi-step-form',
-    image: 'multi-step-form.png',
-    techStack: ['React', 'SASS', 'Formik', 'Yup', 'Redux', 'MUI']
-  },
+  // {
+  //   name: 'Interactive Credit Card',
+  //   projectLink: 'https://carrds.netlify.app',
+  //   projectRepo: 'https://github.com/OluwadaraDaily/interactive-card',
+  //   image: 'interactive-credit-card.png',
+  //   techStack: ['HTML', 'CSS', 'React', 'SASS']
+  // },
+  // {
+  //   name: 'Multi Step Form',
+  //   projectLink: 'https://staged-forms.netlify.app',
+  //   projectRepo: 'https://github.com/OluwadaraDaily/multi-step-form',
+  //   image: 'multi-step-form.png',
+  //   techStack: ['React', 'SASS', 'Formik', 'Yup', 'Redux', 'MUI']
+  // },
   // {
   //   name: 'User Dashboard',
   //   projectLink: 'https://oluwadara-lendsqr-fe-test.netlify.app/',
