@@ -1,104 +1,65 @@
 export const technologies = [
   {
     name: 'Javascript',
-    yearsOfExperience: '5'
+    yearStarted: 2019
+  },
+  {
+    name: 'Python',
+    yearStarted: 2022
   },
   {
     name: 'Vue',
-    yearsOfExperience: '5'
+    yearStarted: 2019
   },
   {
     name: 'React',
-    yearsOfExperience: '3'
+    yearStarted: 2022
   },
   {
     name: 'NextJS',
-    yearsOfExperience: '3'
+    yearStarted: 2022
   },
   {
     name: 'NodeJS',
-    yearsOfExperience: '5'
-  },
-  {
-    name: 'GraphQL',
-    yearsOfExperience: '2'
+    yearStarted: 2019
   },
   {
     name: 'FastAPI',
-    yearsOfExperience: '2'
+    yearStarted: 2022
   },
-  {
-    name: 'PostgreSQL',
-    yearsOfExperience: '3'
-  },
-  {
-    name: 'MySQL',
-    yearsOfExperience: '3'
-  }
 ]
 
 export const projects = [
   {
-    name: 'Audiophile',
-    projectLink: 'https://audiophiled.netlify.app/',
-    projectRepo: 'https://github.com/OluwadaraDaily/audiophile-ui',
-    image: 'audiophile.png',
-    techStack: ['Vue', 'Pinia', 'Composition API', 'Node', 'Knex', 'Express']
+    name: 'Asset Processing Pipeline',
+    projectLink: 'https://asset-processing-pipeline-latest.onrender.com',
+    projectRepo: 'https://github.com/OluwadaraDaily/asset-processing-pipeline',
+    image: 'asset-processing-pipeline.png',
+    demoVideo:
+      'https://www.linkedin.com/posts/oluwadara-oloye_as-a-continuation-from-my-previous-post-activity-7409678919550779392-DE20?utm_source=share&utm_medium=member_desktop&rcm=ACoAACbQcbwBywqlBXG2ORfkgxsnpWUpLwzNrr4',
+    techStack: ['Laravel', 'PHP', 'Vue', 'Docker', 'Render', 'PostgreSQL']
+  },
+  {
+    name: 'Call Me Reminder',
+    projectLink: 'https://github.com/OluwadaraDaily/call-me-reminder',
+    projectRepo: 'https://github.com/OluwadaraDaily/call-me-reminder',
+    image: 'call-me-reminder.png',
+    demoVideo: 'https://www.loom.com/share/8d1f2580f4ab46849ac82f9ded1bd6e4',
+    techStack: ['FastAPI', 'React', 'NextJS', 'SQLite']
   },
   {
     name: 'My Finance App',
     projectLink: 'https://my-finance-ui.vercel.app/dashboard',
     projectRepo: 'https://github.com/OluwadaraDaily/my-finance-ui',
     image: 'my-finance-app.png',
+    demoVideo: 'https://www.youtube.com/watch?v=RLaNpG0Y0-k',
     techStack: ['FastAPI', 'React', 'NextJS', 'TailwindCSS']
   },
   {
-    name: 'Tech Product Tracker (Web Scraping)',
-    projectLink: 'https://github.com/OluwadaraDaily/tech-product-tracker',
-    projectRepo: 'https://github.com/OluwadaraDaily/tech-product-tracker',
-    image: 'tech-product-tracker.png',
-    techStack: ['Python', 'BeautifulSoup', 'Playwright', 'SQLite']
-  },
-  {
-    name: 'Project 1209',
-    projectLink: 'https://project-1209.netlify.app/',
-    projectRepo: 'https://github.com/OluwadaraDaily/project-1209',
-    image: 'project-1209.png',
-    techStack: ['Lit', 'HTML', 'Python', 'Crypto']
-  },
-  {
-    name: 'Dead Jokes',
-    projectLink: 'https://deadjokes.netlify.app/',
-    projectRepo: 'https://github.com/OluwadaraDaily/nuxt-dadjokes',
-    image: 'dead-jokes.png',
-    techStack: ['Nuxt2', 'API Integration', 'PostHog Analytics', 'Node Mail', 'Node JS']
-  },
-  // {
-  //   name: 'Interactive Credit Card',
-  //   projectLink: 'https://carrds.netlify.app',
-  //   projectRepo: 'https://github.com/OluwadaraDaily/interactive-card',
-  //   image: 'interactive-credit-card.png',
-  //   techStack: ['HTML', 'CSS', 'React', 'SASS']
-  // },
-  // {
-  //   name: 'Multi Step Form',
-  //   projectLink: 'https://staged-forms.netlify.app',
-  //   projectRepo: 'https://github.com/OluwadaraDaily/multi-step-form',
-  //   image: 'multi-step-form.png',
-  //   techStack: ['React', 'SASS', 'Formik', 'Yup', 'Redux', 'MUI']
-  // },
-  // {
-  //   name: 'User Dashboard',
-  //   projectLink: 'https://oluwadara-lendsqr-fe-test.netlify.app/',
-  //   projectRepo: 'https://github.com/OluwadaraDaily/lendsqr-fe-test',
-  //   image: 'user-dashboard-lendsqr.png',
-  //   techStack: ['HTML', 'CSS', 'React', 'SASS', 'React Tables']
-  // },
-  // {
-  //   name: 'Opus Landing Page',
-  //   projectLink: 'https://opus-landing.netlify.app',
-  //   projectRepo: 'https://github.com/OluwadaraDaily/opus-landing-page',
-  //   image: 'opus-landing-page.png',
-  //   techStack: ['HTML', 'CSS', 'React', 'SASS']
-  // }
+    name: 'Audiophile',
+    projectLink: 'https://audiophiled.netlify.app/',
+    projectRepo: 'https://github.com/OluwadaraDaily/audiophile-ui',
+    image: 'audiophile.png',
+    techStack: ['Vue', 'Pinia', 'Composition API', 'Node', 'Knex', 'Express']
+  }
 ]

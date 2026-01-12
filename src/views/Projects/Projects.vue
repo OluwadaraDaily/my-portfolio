@@ -27,6 +27,7 @@ defineProps({
         :tech-stack="item.techStack"
         :project-link="item.projectLink"
         :project-repo="item.projectRepo"
+        :demo-video="item.demoVideo"
       />
     </div>
   </div>

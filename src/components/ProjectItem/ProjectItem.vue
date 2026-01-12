@@ -6,7 +6,8 @@
     title: String,
     techStack: Array,
     projectLink: String,
-    projectRepo: String
+    projectRepo: String,
+    demoVideo: String
   });
 
 const openProject = () => {
@@ -17,6 +18,11 @@ const openProject = () => {
 const openRepo = () => {
   if (!!props.projectRepo) {
     window.open(props.projectRepo, "_blank")
+  }
+};
+const openDemoVideo = () => {
+  if (!!props.demoVideo) {
+    window.open(props.demoVideo, "_blank")
   }
 };
 </script>
@@ -32,8 +38,9 @@ const openRepo = () => {
       >{{ item }}</li>
     </ul>
     <div class="project-links">
-      <Button button-text="View Project" :on-click="openProject" />
+      <Button button-text="Live Project" :on-click="openProject" />
       <Button button-text="View Code" :on-click="openRepo"/>
+      <Button v-if="props.demoVideo" button-text="View Demo" :on-click="openDemoVideo"/>
     </div>
   </div>
 </template>

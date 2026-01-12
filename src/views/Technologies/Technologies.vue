@@ -9,7 +9,7 @@ import { technologies } from '../../data/constants';
       v-for="(technology, index) in technologies"
       :key="index"
       :title="technology.name"
-      :years-of-experience="technology.yearsOfExperience"
+      :years-of-experience="new Date().getFullYear() - technology.yearStarted"
     />
   </div>
 </template>
