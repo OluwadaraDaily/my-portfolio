@@ -41,11 +41,11 @@ export const projects = [
   },
   {
     name: 'Call Me Reminder',
-    projectLink: 'https://github.com/OluwadaraDaily/call-me-reminder',
+    projectLink: 'https://cmr-fe.oluwadaradaily.com/',
     projectRepo: 'https://github.com/OluwadaraDaily/call-me-reminder',
     image: 'call-me-reminder.png',
     demoVideo: 'https://www.loom.com/share/8d1f2580f4ab46849ac82f9ded1bd6e4',
-    techStack: ['FastAPI', 'React', 'NextJS', 'SQLite']
+    techStack: ['FastAPI', 'React', 'NextJS', 'SQLite', 'PostgreSQL']
   },
   {
     name: 'My Finance App',
