@@ -19,6 +19,4 @@ defineProps({
   <button class="btn" @click="onClick" :disabled="disabled">{{ buttonText }}</button>
 </template>
 
-<style lang="scss" scoped>
-@import './Button.scss';
-</style>
+<style lang="scss" scoped src="./Button.scss"></style>

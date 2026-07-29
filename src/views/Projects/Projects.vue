@@ -33,6 +33,4 @@ defineProps({
   </div>
 </template>
 
-<style lang="scss" scoped>
-@import './Projects.scss'
-</style>
+<style lang="scss" scoped src="./Projects.scss"></style>

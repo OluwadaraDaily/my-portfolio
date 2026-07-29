@@ -35,6 +35,4 @@ import { RouterLink } from 'vue-router'
   </header>
 </template>
 
-<style lang="scss" scoped>
-@import './Header.scss';
-</style>
+<style lang="scss" scoped src="./Header.scss"></style>

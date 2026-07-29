@@ -26,6 +26,4 @@ import FrontEndMentor from '../../components/icons/FrontEndMentor.vue'
   </div>
 </template>
 
-<style lang="scss" scoped>
-@import './Footer.scss'
-</style>
+<style lang="scss" scoped src="./Footer.scss"></style>

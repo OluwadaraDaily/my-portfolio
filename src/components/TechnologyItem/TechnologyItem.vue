@@ -18,6 +18,4 @@
   })
 </script>
 
-<style lang="scss" scoped>
-@import './TechnologyItem.scss'
-</style>
+<style lang="scss" scoped src="./TechnologyItem.scss"></style>

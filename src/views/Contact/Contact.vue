@@ -158,6 +158,4 @@ export default {
 
 </script>
 
-<style lang="scss" scoped>
-@import './Contact.scss';
-</style>
+<style lang="scss" scoped src="./Contact.scss"></style>

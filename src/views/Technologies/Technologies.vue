@@ -14,6 +14,4 @@ import { technologies } from '../../data/constants';
   </div>
 </template>
 
-<style lang="scss" scoped>
-@import './Technologies.scss'
-</style>
+<style lang="scss" scoped src="./Technologies.scss"></style>

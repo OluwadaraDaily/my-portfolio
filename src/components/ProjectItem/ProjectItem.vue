@@ -45,6 +45,4 @@ const openDemoVideo = () => {
   </div>
 </template>
 
-<style lang="scss" scoped>
-@import './ProjectItem.scss'
-</style>
+<style lang="scss" scoped src="./ProjectItem.scss"></style>

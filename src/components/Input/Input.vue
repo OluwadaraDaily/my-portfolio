@@ -23,6 +23,4 @@ const handleOnChange = (e) => {
   </div>
 </template>
 
-<style lang="scss" scoped>
-@import './Input.scss';
-</style>
+<style lang="scss" scoped src="./Input.scss"></style>
