@@ -31,13 +31,22 @@ export const technologies = [
 
 export const projects = [
   {
+    name: 'Sermon Prep Tool',
+    projectLink: 'https://sermonprep.oluwadaradaily.com/',
+    projectRepo: 'https://github.com/OluwadaraDaily/sermon-prep',
+    image: 'sermon-prep.png',
+    demoVideo:
+      'https://youtu.be/O7-Ptne99FQ',
+    techStack: ['React', 'Typescript']
+  },
+  {
     name: 'Asset Processing Pipeline',
     projectLink: 'https://asset-processing-pipeline-latest.onrender.com',
     projectRepo: 'https://github.com/OluwadaraDaily/asset-processing-pipeline',
     image: 'asset-processing-pipeline.png',
     demoVideo:
       'https://www.linkedin.com/posts/oluwadara-oloye_as-a-continuation-from-my-previous-post-activity-7409678919550779392-DE20?utm_source=share&utm_medium=member_desktop&rcm=ACoAACbQcbwBywqlBXG2ORfkgxsnpWUpLwzNrr4',
-    techStack: ['Laravel', 'PHP', 'Vue', 'Docker', 'Render', 'PostgreSQL']
+    techStack: ['Laravel', 'PHP', 'Vue', 'Docker', 'PostgreSQL']
   },
   {
     name: 'Call Me Reminder',
