@@ -12,7 +12,7 @@ import Footer from './views/Footer/Footer.vue';
   <div class="app">
     <Header/>
     <Introduction :scrollTo="scrollTo"/>
-    <Technologies/>
+    <!-- <Technologies/> -->
     <Projects :scrollTo="scrollTo"/>
     <Contact ref="contact-section"/>
     <Footer/>
