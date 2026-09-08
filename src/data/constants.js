@@ -31,6 +31,14 @@ export const technologies = [
 
 export const projects = [
   {
+    name: 'Account Manager',
+    projectRepo: 'https://github.com/OluwadaraDaily/account-manager',
+    image: 'account-manager.png',
+    demoVideo:
+      'https://youtu.be/BmVjcJxScLs',
+    techStack: ['Node.js', 'Typescript', 'React', 'SQLite']
+  },
+  {
     name: 'Sermon Prep Tool',
     projectLink: 'https://sermonprep.oluwadaradaily.com/',
     projectRepo: 'https://github.com/OluwadaraDaily/sermon-prep',
