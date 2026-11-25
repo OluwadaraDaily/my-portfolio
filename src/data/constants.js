@@ -39,7 +39,6 @@ export const projects = [
     name: 'Account Manager',
     year: 2026,
     pitch: 'Builds income and expense records from the emails in your inbox.',
-    featured: true,
     projectRepo: 'https://github.com/OluwadaraDaily/account-manager',
     image: 'account-manager.png',
     demoVideo:
@@ -67,7 +66,6 @@ export const projects = [
     name: 'Sermon Prep Tool',
     year: 2026,
     pitch: 'Helps preachers and teachers prepare sermons faster.',
-    featured: true,
     projectLink: 'https://sermonprep.oluwadaradaily.com/',
     projectRepo: 'https://github.com/OluwadaraDaily/sermon-prep',
     image: 'sermon-prep.png',
@@ -124,7 +122,6 @@ export const projects = [
     name: 'Call Me Reminder',
     year: 2026,
     pitch: 'Reminds you to make the calls you planned.',
-    featured: true,
     projectLink: 'https://cmr-fe.oluwadaradaily.com/',
     projectRepo: 'https://github.com/OluwadaraDaily/call-me-reminder',
     image: 'call-me-reminder.png',
