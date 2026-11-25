@@ -70,6 +70,14 @@
       display: flex;
       justify-content: flex-end;
     }
+
+    .form-status {
+      text-align: right;
+      margin-top: 10px;
+      font-weight: 500;
+      &.success-message { color: var(--green); }
+      &.error-message { color: var(--error); }
+    }
   }
 }
 

@@ -8,13 +8,14 @@
       </p>
     </div>
     <form class="form" @submit.prevent="handleSubmit">
+      <p hidden><label>Leave this empty: <input name="bot-field" v-model="state.botField"></label></p>
       <div class="input-div">
         <div>
           <Caution class="input-right-icon" v-show="v$.name.$error"/>
           <input 
             type="text" 
             name="name"
-            :class="(v$.name.$error & v$.name.$dirty) ? 'input error-input' : v$.name.$dirty ? 'input success-input' : 'input'" placeholder="Name" 
+            :class="(v$.name.$error && v$.name.$dirty) ? 'input error-input' : v$.name.$dirty ? 'input success-input' : 'input'" placeholder="Name"
             v-model="state.name"
             @blur="v$.name.$touch"
           >
@@ -29,7 +30,7 @@
           <input 
             type="email"
             name="email"
-            :class="(v$.email.$error & v$.email.$dirty) ? 'input error-input' : v$.email.$dirty ? 'input success-input' : 'input'"
+            :class="(v$.email.$error && v$.email.$dirty) ? 'input error-input' : v$.email.$dirty ? 'input success-input' : 'input'"
             placeholder="Email"
             v-model="state.email"
             @blur="v$.email.$touch"
@@ -46,7 +47,7 @@
             cols="10"
             rows="10"
             name="message"
-            :class="(v$.message.$error & v$.message.$dirty) ? 'input error-input' : v$.message.$dirty ? 'input success-input' : 'input'"
+            :class="(v$.message.$error && v$.message.$dirty) ? 'input error-input' : v$.message.$dirty ? 'input success-input' : 'input'"
             placeholder="Message"
             v-model="state.message"
             @blur="v$.message.$touch"
@@ -59,6 +60,7 @@
       <div class="form-btn">
         <Button type="submit" :button-text="loadingState ? 'Loading...' : 'Send Message'" id="submit-btn" :disabled="v$.name.$error || v$.email.$error|| v$.message.$error || loadingState"/>
       </div>
+      <p class="form-status" :class="status.ok ? 'success-message' : 'error-message'" aria-live="polite">{{ status.text }}</p>
     </form>
   </div>
 </template>
@@ -79,9 +81,11 @@ export default {
     const state = reactive({
       name: '',
       email: '',
-      message: ''
+      message: '',
+      botField: ''
     })
 
+    const status = reactive({ ok: false, text: '' })
     const loadingState = ref(false)
     
     // Computed Properties
@@ -101,37 +105,28 @@ export default {
       loadingState.value = true
       v$.value.$validate()
       if (!v$.value.$error) {
-        const url = import.meta.env.VITE_AIRTABLE_URL;
-        const data = {
-          records: [
-            {
-              fields: {
-                "Name": state.name.toUpperCase(),
-                "Email Address": state.email,
-                "Message": state.message
-              }
-            }
-          ]
-        }
-        const options = {
+        status.text = ''
+        fetch('/', {
           method: 'POST',
-          headers: {
-            "Content-Type": "application/json",
-            "Accept": "application/json",
-            "Authorization": `Bearer ${import.meta.env.VITE_AIRTABLE_TOKEN}`
-          },
-          body: JSON.stringify(data)
-        }
-  
-        fetch(url, options)
-          .then(response => response.json())
-          .then(data => {
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams({
+            'form-name': 'contact',
+            name: state.name,
+            email: state.email,
+            message: state.message,
+            'bot-field': state.botField
+          }).toString()
+        })
+          .then(response => {
+            if (!response.ok) throw new Error(`Form submission failed: ${response.status}`)
             clearFields()
-            alert("Thank you for the message :)")
+            status.ok = true
+            status.text = 'Thank you for the message :)'
           })
-          .catch(err => {
-            clearFields()
-            alert("There was an error, please try again")
+          .catch(() => {
+            // Keep the fields so the visitor can retry without retyping.
+            status.ok = false
+            status.text = 'There was an error, please try again.'
           })
           .finally(() => {
             loadingState.value = false
@@ -151,7 +146,7 @@ export default {
     }
 
 
-    return { state, v$, loadingState, handleSubmit }
+    return { state, v$, status, loadingState, handleSubmit }
   }
 
 }
