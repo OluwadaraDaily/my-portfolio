@@ -8,6 +8,10 @@ defineProps({
     type: Function,
     default: () => { }
   },
+  href: {
+    type: String,
+    default: null
+  },
   disabled: {
     type: Boolean,
     default: false
@@ -16,7 +20,8 @@ defineProps({
 </script>
 
 <template>
-  <button class="btn" @click="onClick" :disabled="disabled">{{ buttonText }}</button>
+  <a v-if="href" class="btn" :href="href">{{ buttonText }}</a>
+  <button v-else class="btn" @click="onClick" :disabled="disabled">{{ buttonText }}</button>
 </template>
 
 <style lang="scss" scoped src="./Button.scss"></style>

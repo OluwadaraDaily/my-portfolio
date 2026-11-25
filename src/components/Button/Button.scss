@@ -9,6 +9,8 @@
   border: none;
   border-bottom: 2px solid var(--green);
   cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
 
   &:disabled {
     opacity: .5;
@@ -21,4 +23,10 @@
 
 .btn:hover {
   text-decoration: none;
+}
+
+// Match the browser's default <button> text so link buttons look the same.
+a.btn {
+  font-size: 13.3333px;
+  line-height: normal;
 }
