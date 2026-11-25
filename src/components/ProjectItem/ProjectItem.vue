@@ -4,6 +4,8 @@
     image: String,
     imageAltText: String,
     title: String,
+    year: Number,
+    pitch: String,
     techStack: Array,
     projectLink: String,
     projectRepo: String,
@@ -30,7 +32,8 @@ const openDemoVideo = () => {
 <template>
   <div class="main-project-item">
     <img :src="`./images/${image}`" class="project-img" :alt="imageAltText">
-    <p class="title">{{ title }}</p>
+    <p class="title">{{ title }} <span class="year">{{ year }}</span></p>
+    <p class="pitch">{{ pitch }}</p>
     <ul class="tech-stack-list">
       <li class="tech-stack-list-item"
         v-for="(item, index) in techStack"
@@ -38,7 +41,7 @@ const openDemoVideo = () => {
       >{{ item }}</li>
     </ul>
     <div class="project-links">
-      <Button button-text="Live Project" :on-click="openProject" />
+      <Button v-if="props.projectLink" button-text="Live Project" :on-click="openProject" />
       <Button button-text="View Code" :on-click="openRepo"/>
       <Button v-if="props.demoVideo" button-text="View Demo" :on-click="openDemoVideo"/>
     </div>
