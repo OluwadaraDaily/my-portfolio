@@ -7,6 +7,14 @@
     font-size: var(--text-s);
     text-transform: uppercase;
     font-weight: 600;
+    .year {
+      color: var(--white-soft);
+      font-weight: 400;
+    }
+  }
+  .pitch {
+    color: var(--white-soft);
+    margin-bottom: 10px;
   }
   ul.tech-stack-list {
     list-style-type: none;

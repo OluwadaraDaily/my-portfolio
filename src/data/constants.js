@@ -37,6 +37,9 @@ export const technologies = [
 export const projects = [
   {
     name: 'Account Manager',
+    year: 2026,
+    pitch: 'Builds income and expense records from the emails in your inbox.',
+    featured: true,
     projectRepo: 'https://github.com/OluwadaraDaily/account-manager',
     image: 'account-manager.png',
     demoVideo:
@@ -46,6 +49,9 @@ export const projects = [
   },
   {
     name: 'Sermon Prep Tool',
+    year: 2026,
+    pitch: 'Helps preachers and teachers prepare sermons faster.',
+    featured: true,
     projectLink: 'https://sermonprep.oluwadaradaily.com/',
     projectRepo: 'https://github.com/OluwadaraDaily/sermon-prep',
     image: 'sermon-prep.png',
@@ -56,6 +62,8 @@ export const projects = [
   },
   {
     name: 'Asset Processing Pipeline',
+    year: 2025,
+    pitch: 'Processes uploaded images, videos and other assets.',
     projectLink: 'https://asset-processing-pipeline-latest.onrender.com',
     projectRepo: 'https://github.com/OluwadaraDaily/asset-processing-pipeline',
     image: 'asset-processing-pipeline.png',
@@ -66,6 +74,9 @@ export const projects = [
   },
   {
     name: 'Call Me Reminder',
+    year: 2026,
+    pitch: 'Reminds you to make the calls you planned.',
+    featured: true,
     projectLink: 'https://cmr-fe.oluwadaradaily.com/',
     projectRepo: 'https://github.com/OluwadaraDaily/call-me-reminder',
     image: 'call-me-reminder.png',
@@ -75,6 +86,8 @@ export const projects = [
   },
   {
     name: 'My Finance App',
+    year: 2025,
+    pitch: 'Tracks your personal finances.',
     projectLink: 'https://my-finance-ui.vercel.app/dashboard',
     projectRepo: 'https://github.com/OluwadaraDaily/my-finance-ui',
     image: 'my-finance-app.png',
@@ -84,6 +97,8 @@ export const projects = [
   },
   {
     name: 'Audiophile',
+    year: 2024,
+    pitch: 'Online store for audio equipment.',
     projectLink: 'https://audiophiled.netlify.app/',
     projectRepo: 'https://github.com/OluwadaraDaily/audiophile-ui',
     image: 'audiophile.png',
