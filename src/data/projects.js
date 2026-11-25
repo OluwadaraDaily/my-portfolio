@@ -1,7 +1,7 @@
 // Each project gets a page at /projects/<slug>.
 //   links: { live, repo }. Leave out a key the project doesn't have.
-//   media: videos and posts about the project, newest first. The first YouTube entry
-//     plays at the top of the project page.
+//   media: videos and posts about the project. Put the demo first: the play icon on the
+//     home page links to media[0]. The first YouTube entry plays on the project page.
 //     { type: 'youtube', id, title } or { type: 'loom' | 'linkedin' | 'blog', url, title }
 //   story: { problem, approach, learned: strings (blank lines split paragraphs),
 //     tradeoffs: [{ decision, why, cost }] }. The page hides empty sections.
