@@ -1,11 +1,14 @@
-import { createApp } from 'vue'
+import { createApp, createSSRApp } from 'vue'
+import { createWebHistory } from 'vue-router'
 import App from './App.vue'
-import router from './router'
+import createRouter from './router'
 
 import './assets/main.css'
 
-const app = createApp(App)
+// Hydrate the prerendered HTML (scripts/prerender.js); the dev server has none, so mount fresh.
+const app = (document.getElementById('app').hasChildNodes() ? createSSRApp : createApp)(App)
+const router = createRouter(createWebHistory(import.meta.env.BASE_URL))
 
 app.use(router)
 
-app.mount('#app')
+router.isReady().then(() => app.mount('#app'))
