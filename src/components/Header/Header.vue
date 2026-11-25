@@ -26,7 +26,16 @@ import { RouterLink } from 'vue-router'
     </div>
     <div v-if="$route.name === 'home'" class="portfolio__header__image">
       <img
-        src="../../assets/images/oluwadara.png"
+        src="/images/portrait/oluwadara-562.webp"
+        srcset="
+          /images/portrait/oluwadara-352.webp 352w,
+          /images/portrait/oluwadara-445.webp 445w,
+          /images/portrait/oluwadara-562.webp 562w
+        "
+        sizes="(max-width: 659px) 174px, (max-width: 1024px) 352px, 445px"
+        width="562"
+        height="444"
+        fetchpriority="high"
         class="portfolio__header__image_img"
         alt="Portrait of Oluwadara Oloye"
       />
