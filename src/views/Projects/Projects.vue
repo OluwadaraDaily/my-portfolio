@@ -38,17 +38,12 @@ const others = projects.filter((p) => !p.featured);
     </div>
     <ul class="project-list">
       <li v-for="item in others" :key="item.name" class="project-row">
-        <a
-          :href="item.projectLink || item.projectRepo"
-          target="_blank"
-          rel="noopener"
-          class="row-link"
-        >
+        <RouterLink :to="`/projects/${item.slug}`" class="row-link">
           <span class="year">{{ item.year }}</span>
           <span class="name">{{ item.name }}</span>
           <span class="pitch">{{ item.pitch }}</span>
           <span class="stack">{{ item.techStack.join(' · ') }}</span>
-        </a>
+        </RouterLink>
         <a
           v-if="item.demoVideo"
           :href="item.demoVideo"
