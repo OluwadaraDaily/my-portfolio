@@ -7,7 +7,8 @@
     techStack: Array,
     projectLink: String,
     projectRepo: String,
-    demoVideo: String
+    demoVideo: String,
+    slug: String
   });
 
 const openProject = () => {
@@ -41,6 +42,7 @@ const openDemoVideo = () => {
       <Button button-text="Live Project" :on-click="openProject" />
       <Button button-text="View Code" :on-click="openRepo"/>
       <Button v-if="props.demoVideo" button-text="View Demo" :on-click="openDemoVideo"/>
+      <RouterLink v-if="slug" :to="`/projects/${slug}`" class="details-link">Details</RouterLink>
     </div>
   </div>
 </template>

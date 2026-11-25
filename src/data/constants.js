@@ -29,6 +29,11 @@ export const technologies = [
   },
 ]
 
+// Each project gets a page at /projects/<slug>. These write-up fields are optional;
+// the page hides any section that is missing or empty:
+//   problem, approach, learned: strings (blank lines split paragraphs)
+//   tradeoffs: [{ decision, why, cost }]
+//   relatedPosts: [{ title, url }]
 export const projects = [
   {
     name: 'Account Manager',
@@ -36,7 +41,8 @@ export const projects = [
     image: 'account-manager.png',
     demoVideo:
       'https://youtu.be/BmVjcJxScLs',
-    techStack: ['Node.js', 'Typescript', 'React', 'SQLite']
+    techStack: ['Node.js', 'Typescript', 'React', 'SQLite'],
+    slug: 'account-manager'
   },
   {
     name: 'Sermon Prep Tool',
@@ -45,7 +51,8 @@ export const projects = [
     image: 'sermon-prep.png',
     demoVideo:
       'https://youtu.be/O7-Ptne99FQ',
-    techStack: ['React', 'Typescript']
+    techStack: ['React', 'Typescript'],
+    slug: 'sermon-prep'
   },
   {
     name: 'Asset Processing Pipeline',
@@ -54,7 +61,8 @@ export const projects = [
     image: 'asset-processing-pipeline.png',
     demoVideo:
       'https://www.linkedin.com/posts/oluwadara-oloye_as-a-continuation-from-my-previous-post-activity-7409678919550779392-DE20?utm_source=share&utm_medium=member_desktop&rcm=ACoAACbQcbwBywqlBXG2ORfkgxsnpWUpLwzNrr4',
-    techStack: ['Laravel', 'PHP', 'Vue', 'Docker', 'PostgreSQL']
+    techStack: ['Laravel', 'PHP', 'Vue', 'Docker', 'PostgreSQL'],
+    slug: 'asset-processing-pipeline'
   },
   {
     name: 'Call Me Reminder',
@@ -62,7 +70,8 @@ export const projects = [
     projectRepo: 'https://github.com/OluwadaraDaily/call-me-reminder',
     image: 'call-me-reminder.png',
     demoVideo: 'https://www.loom.com/share/8d1f2580f4ab46849ac82f9ded1bd6e4',
-    techStack: ['FastAPI', 'React', 'NextJS', 'SQLite', 'PostgreSQL']
+    techStack: ['FastAPI', 'React', 'NextJS', 'SQLite', 'PostgreSQL'],
+    slug: 'call-me-reminder'
   },
   {
     name: 'My Finance App',
@@ -70,13 +79,15 @@ export const projects = [
     projectRepo: 'https://github.com/OluwadaraDaily/my-finance-ui',
     image: 'my-finance-app.png',
     demoVideo: 'https://www.youtube.com/watch?v=RLaNpG0Y0-k',
-    techStack: ['FastAPI', 'React', 'NextJS', 'TailwindCSS']
+    techStack: ['FastAPI', 'React', 'NextJS', 'TailwindCSS'],
+    slug: 'my-finance-app'
   },
   {
     name: 'Audiophile',
     projectLink: 'https://audiophiled.netlify.app/',
     projectRepo: 'https://github.com/OluwadaraDaily/audiophile-ui',
     image: 'audiophile.png',
-    techStack: ['Vue', 'Pinia', 'Composition API', 'Node', 'Knex', 'Express']
+    techStack: ['Vue', 'Pinia', 'Composition API', 'Node', 'Knex', 'Express'],
+    slug: 'audiophile'
   }
 ]

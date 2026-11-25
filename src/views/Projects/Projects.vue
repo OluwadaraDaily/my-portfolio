@@ -28,6 +28,7 @@ defineProps({
         :project-link="item.projectLink"
         :project-repo="item.projectRepo"
         :demo-video="item.demoVideo"
+        :slug="item.slug"
       />
     </div>
   </div>
