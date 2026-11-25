@@ -1,8 +1,5 @@
 <script setup>
-import GitHub from '../icons/GitHub.vue'
-import LinkedIn from '../icons/LinkedIn.vue'
-import Twitter from '../icons/Twitter.vue'
-import FrontEndMentor from '../icons/FrontEndMentor.vue'
+import { socialLinks } from '../../data/socialLinks'
 import { RouterLink } from 'vue-router'
 </script>
 
@@ -15,22 +12,24 @@ import { RouterLink } from 'vue-router'
         </RouterLink>
       </div>
       <div class="portfolio__header__links">
-        <a href="https://github.com/OluwadaraDaily" target="__blank">
-          <GitHub />
-        </a>
-        <a href="https://www.frontendmentor.io/profile/OluwadaraDaily" target="__blank">
-          <FrontEndMentor />
-        </a>
-        <a href="https://www.linkedin.com/in/oluwadara-oloye" target="__blank">
-          <LinkedIn />
-        </a>
-        <a href="https://twitter.com/OluwadaraDaily" target="__blank">
-          <Twitter />
+        <a
+          v-for="link in socialLinks"
+          :key="link.href"
+          :href="link.href"
+          :aria-label="link.label"
+          target="_blank"
+          rel="noopener"
+        >
+          <component :is="link.icon" />
         </a>
       </div>
     </div>
     <div class="portfolio__header__image">
-      <img src="../../assets/images/oluwadara.png" class="portfolio__header__image_img" alt="">
+      <img
+        src="../../assets/images/oluwadara.png"
+        class="portfolio__header__image_img"
+        alt="Portrait of Oluwadara Oloye"
+      />
     </div>
   </header>
 </template>

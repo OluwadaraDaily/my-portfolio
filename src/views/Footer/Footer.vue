@@ -1,25 +1,20 @@
 <script setup>
-import GitHub from '../../components/icons/GitHub.vue'
-import LinkedIn from '../../components/icons/LinkedIn.vue'
-import Twitter from '../../components/icons/Twitter.vue'
-import FrontEndMentor from '../../components/icons/FrontEndMentor.vue'
+import { socialLinks } from '../../data/socialLinks'
 </script>
 <template>
   <div class="main-footer">
     <div class="inner-footer">
       <p class="footer-name">oluwadara oloye</p>
       <div class="footer-links">
-        <a href="https://github.com/OluwadaraDaily" target="__blank">
-          <GitHub />
-        </a>
-        <a href="https://www.frontendmentor.io/profile/OluwadaraDaily" target="__blank">
-          <FrontEndMentor />
-        </a>
-        <a href="https://www.linkedin.com/in/oluwadara-oloye" target="__blank">
-          <LinkedIn />
-        </a>
-        <a href="https://twitter.com/OluwadaraDaily" target="__blank">
-          <Twitter />
+        <a
+          v-for="link in socialLinks"
+          :key="link.href"
+          :href="link.href"
+          :aria-label="link.label"
+          target="_blank"
+          rel="noopener"
+        >
+          <component :is="link.icon" />
         </a>
       </div>
     </div>
