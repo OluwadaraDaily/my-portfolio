@@ -9,6 +9,9 @@ defineProps({
     required: true
   }
 });
+
+const featured = projects.filter((p) => p.featured);
+const others = projects.filter((p) => !p.featured);
 </script>
 
 <template>
@@ -19,17 +22,43 @@ defineProps({
     </div>
     <div class="main-projects__projects">
       <ProjectItem
-        v-for="(item, index) in projects"
-        :key="index"
+        v-for="item in featured"
+        :key="item.name"
         :image="item.image"
         :image-alt-text="`Website Image of ${item.name}`"
         :title="item.name"
+        :year="item.year"
+        :pitch="item.pitch"
         :tech-stack="item.techStack"
         :project-link="item.projectLink"
         :project-repo="item.projectRepo"
         :demo-video="item.demoVideo"
       />
     </div>
+    <ul class="project-list">
+      <li v-for="item in others" :key="item.name" class="project-row">
+        <a
+          :href="item.projectLink || item.projectRepo"
+          target="_blank"
+          rel="noopener"
+          class="row-link"
+        >
+          <span class="year">{{ item.year }}</span>
+          <span class="name">{{ item.name }}</span>
+          <span class="pitch">{{ item.pitch }}</span>
+          <span class="stack">{{ item.techStack.join(' · ') }}</span>
+        </a>
+        <a
+          v-if="item.demoVideo"
+          :href="item.demoVideo"
+          target="_blank"
+          rel="noopener"
+          class="video"
+          :aria-label="`Watch the ${item.name} demo video`"
+          :title="`Watch the ${item.name} demo video`"
+        >▶</a>
+      </li>
+    </ul>
   </div>
 </template>
 
