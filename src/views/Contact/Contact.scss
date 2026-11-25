@@ -32,12 +32,12 @@
         outline: none;
         caret-color: var(--white);
         color: var(--white);
-        font-family: 'Space Grotesk';
+        font-family: 'Space Grotesk', sans-serif;
         text-transform: uppercase;
         line-height: 1.5;
         &::placeholder {
           color: var(--white);
-          font-family: 'Space Grotesk';
+          font-family: 'Space Grotesk', sans-serif;
           text-transform: uppercase;
           opacity: .5;
         }
