@@ -24,7 +24,7 @@ import { RouterLink } from 'vue-router'
         </a>
       </div>
     </div>
-    <div class="portfolio__header__image">
+    <div v-if="$route.name === 'home'" class="portfolio__header__image">
       <img
         src="../../assets/images/oluwadara.png"
         class="portfolio__header__image_img"

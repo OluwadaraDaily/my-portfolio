@@ -1,12 +1,5 @@
 <script setup>
 import AppButton from "../../components/Button/Button.vue";
-
-defineProps({
-  scrollTo: {
-    type: Function,
-    required: true
-  }
-});
 </script>
 
 <template>
@@ -17,7 +10,7 @@ defineProps({
       real problems.
     </p>
     <div class="contact-me">
-      <AppButton button-text="Contact Me" @click="scrollTo('contact-section')"/>
+      <AppButton button-text="Contact Me" href="#contact"/>
     </div>
   </div>
 </template>

@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import Home from '../views/Home/Home.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -7,15 +7,17 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: Home
     },
     {
       path: '/projects/:slug',
       name: 'project',
       component: () => import('../views/ProjectPage/ProjectPage.vue')
-    }
+    },
+    { path: '/:pathMatch(.*)*', redirect: '/' }
   ],
-  scrollBehavior: (to, from, savedPosition) => savedPosition || { top: 0 }
+  scrollBehavior: (to, from, savedPosition) =>
+    savedPosition || (to.hash ? { el: to.hash } : { top: 0 })
 })
 
 export default router
